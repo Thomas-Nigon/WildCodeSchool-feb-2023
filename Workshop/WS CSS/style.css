@@ -1,0 +1,117 @@
+:root{
+    --primary-color: #f76c6c;
+    --secondary-color: rgb(255, 255, 255);
+    --tertiary-color: rgb(233, 214, 182);
+    --primary-text-color: black;
+    --secondary-text-color: white;
+    --primary-font: verdana;
+
+}
+* {
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+    line-height: 1.5;
+    margin: 0;
+    
+  }  
+body {
+    background-color: var(--tertiary-color);
+display: flex;
+flex-direction: column;
+align-items: center;
+min-height: 100vh;
+margin:0;
+}
+
+nav{
+background-color: var(--primary-color);
+color: var(--secondary-text-color);
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+
+ul{
+margin: 0;
+padding: 0;
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+}
+
+li{
+margin: 0;    
+padding: 10px;
+list-style: none;
+justify-content: flex-start;
+}
+
+li :hover{
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+a{
+    text-decoration: none;
+    color:var(--secondary-text-color-color)
+}
+
+header{
+/* text-align: center; */
+margin: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 250px;
+background-image: url("/Workshop/WS CSS/pinkwallpaper.jpg");
+background-size: 100%;
+background-repeat: no-repeat;
+width: 100%;
+}
+
+h1{
+    color: var(--primary-color);
+}
+main{
+display: flex;    
+flex-direction: column;
+align-items: center;
+background-color: var(--tertiary-color) ;
+width: 100%;
+}
+
+h2{
+    text-align: center;
+    color: var(--secondary-text-color);
+}
+
+.about{
+    color: var(--secondary-text-color);
+    display: flex;
+    margin: 10px;
+    max-width: 65ch;
+    }
+
+.featuredPost {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    width: 80%;
+    height:100%;
+    margin: 10px;
+  }
+
+  .box {
+/*     background-color: var(--tertiary-color); */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+  }
+
+footer{
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: auto;
+}
